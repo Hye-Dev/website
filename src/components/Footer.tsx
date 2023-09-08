@@ -1,4 +1,5 @@
 import { createStyles, Container, Group, Anchor, rem } from '@mantine/core';
+import { useRouter } from 'next/router';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -33,12 +34,13 @@ interface FooterSimpleProps {
 
 export default function Footer({ links }: FooterSimpleProps) {
   const { classes } = useStyles();
+  const router = useRouter();
   const items = links.map((link) => (
     <Anchor<'a'>
       color="dimmed"
       key={link.label}
       href={link.link}
-      onClick={(event) => event.preventDefault()}
+      onClick={(event) => router.push(link.link)}
       size="sm"
     >
       {link.label}
