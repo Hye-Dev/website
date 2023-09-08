@@ -1,5 +1,5 @@
 import { Group, Avatar, Text, Accordion, Paper, TextInput, Textarea, Button, Flex } from '@mantine/core';
-import { IconBus, IconGift, IconUser, IconUserHeart, IconWifi } from '@tabler/icons-react';
+import { IconBus, IconGift, IconPlugConnected, IconUser, IconUserHeart, IconWifi } from '@tabler/icons-react';
 import { useState } from 'react';
 import emailjs from "@emailjs/browser"
 import ReCAPTCHA from "react-google-recaptcha";
@@ -18,7 +18,12 @@ const charactersList = [
     description: "It's a struggle to get between classes in this Texas heat",
     content: "Before the COVID-19 pandemic, UT Dallas had Comet Cabs that students could track with the UT Dallas app, and just hop on and get where they needed to go. I will push to bring back the Comet Cab service, making it easierfor Comets to get around campus.",
   },
-
+  {
+    id: "power",
+    label: "More Power Outlets",
+    description: "There aren't enough outlets on campus to charge our devices",
+    content: "Many students go to places like Starbucks to study in a casual environment, but then are suprised to find that there are not any power outlets available for them to charge their devices, often cutting their study session short. I will work to bring more power outlets to campus, so that students can study for as long as they need to."
+  },
   {
     id: 'reps',
     label: "Representatives, Not Politicians",
@@ -36,7 +41,7 @@ const charactersList = [
     label: "Representatives That Listen To You",
     description: `We need representatives that are easy to reach and are willing to listen to students`,
     content: "We need representatives that listen to the feedback of students. That's why I have this form right here, where you can directly contact me about anything, whether it's a policy proposal, a complaint, or just a question. I am your voice, and a voice is no good if it does not listen."
-  }
+  },
 ];
 
 interface AccordionLabelProps {
@@ -54,6 +59,7 @@ function AccordionLabel({ label, description }: AccordionLabelProps) {
         {label == "Representatives, Not Politicians" ? <IconUser color="darkred" /> : ""}
         {label == "A Better Welcome" ? <IconGift color="darkgreen" /> : ""}
         {label == "Representatives That Listen To You" ? <IconUserHeart color="pink" /> : ""}
+        {label == "More Power Outlets" ? <IconPlugConnected color="lightgreen" /> : ""}
       <div>
         <Text>{label}</Text>
         <Text size="sm" color="dimmed" weight={400}>
