@@ -44,7 +44,7 @@ export default function Home() {
       </Flex>      
       <Flex direction="column">
       <IconBrandLinkedin onClick={() => window.open("https://www.linkedin.com/in/joseph-maldjian-b92b4328b/")} style={{marginRight: "auto", marginLeft: "auto", cursor: "pointer"}} size="100px" />
-      <Text align="center">Linkedin</Text>
+      <Text align="center">LinkedIn</Text>
       </Flex>      
 
   </SimpleGrid>
