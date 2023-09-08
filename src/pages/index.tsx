@@ -14,7 +14,7 @@ export default function Home() {
     <Container mb="80px">
     <Flex direction='row'>
     <SimpleGrid cols={2} mt="lg">
-      <Text>For too long, politicians in our student government have focused on the issues that impact the few, while the average Comet has been ignored. That all changes starting with this great movement. This movement represents a shift to implementing policies that improve the quality of Comets everyday life. Every decision made on residential life, on transportation, on academics, and on social affairs will be made to benefit this great student body. We do not seek to take away from the few, but rather to make every Comet's voice have a place in our student government. Working together, we will implement real policies that enhance your everyday life.</Text>
+      <Text>It's time for student government to focus on the big issues that impact every Comet. That's what this great movement is all about. This movement represents a new push to implement policies that improve the quality of every Comet's life. Every decision made on residential life, on transportation, on academics, and on social affairs will be made to benefit every student of this great body. We do not seek to take away from anyone else's needs, but rather to make <span style={{fontWeight: "bold"}}>every</span> Comet's voice have a place in our student government. Working together, we will implement real policies that enhance life for every Comet.</Text>
       <Image mx="auto" radius="md" src="./utdSky.JPG" alt="UT Dallas Sky View" />
       </SimpleGrid>
     </Flex>
