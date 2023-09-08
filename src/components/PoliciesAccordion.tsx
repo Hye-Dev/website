@@ -23,7 +23,7 @@ const charactersList = [
     id: 'reps',
     label: "Representatives, Not Politicians",
     description: 'We need people who are here to serve the students, not themselves',
-    content: 'We need charismatic and ethical leaders who truly represent the people. Leaders who are not all talk and no action. We need leaders promote policies that improve the lives of every comet.',
+    content: 'We need charismatic and ethical leaders who truly represent the people. Leaders who are not all talk and no action. We need leaders who promote policies that improve the lives of every comet.',
   },
   {
     id: 'gifts',
