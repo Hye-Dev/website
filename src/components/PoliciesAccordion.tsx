@@ -16,7 +16,7 @@ const charactersList = [
     id: 'cabs',
     label: 'Comet Cabs',
     description: "It's a struggle to get between classes in this Texas heat",
-    content: "Before the COVID-19 pandemic, UT Dallas had Comet Cabs that students could track with the UT Dallas app, and just hop on and get where they needed to go. I will push to bring back the Comet Cab service, making it easierfor Comets to get around campus.",
+    content: "Before the COVID-19 pandemic, UT Dallas had Comet Cabs that students could track with the UT Dallas app, and just hop on and get where they needed to go. I will push to bring back the Comet Cab service, making it easier for Comets to get around campus.",
   },
   {
     id: "power",
