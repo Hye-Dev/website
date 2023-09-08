@@ -22,9 +22,9 @@ export default function App(props: AppProps) {
           colorScheme: 'dark',
         }}
       >
-            <Navigation links={[{label: "Home", link: "/"}, {label: "Join", link: "/join"}, {label: "Our Team", link: "/team"}]} />
+            <Navigation links={[{label: "Home", link: "/"},  {label: "Our Team", link: "/team"}]} />
         <Component {...pageProps} />
-        <Footer links={[{label: "Home", link: "/"}, {label: "Join", link: "/join"}, {label: "Our Team", link: "/team"}, {label: "Source Code", link: "https://github.com/hye-dev/website"}]} />
+        <Footer links={[{label: "Home", link: "/"}, {label: "Our Team", link: "/team"}, {label: "Source Code", link: "https://github.com/hye-dev/website"}]} />
       </MantineProvider>
     </>
   );
