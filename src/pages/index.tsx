@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
 import PoliciesAccordion from "@/components/PoliciesAccordion";
 import { ActionIcon, BackgroundImage, Button, Center, Container, Flex, Image, Overlay, SimpleGrid, Text, Title } from "@mantine/core";
-import { IconBrandInstagram, IconBrandX } from "@tabler/icons-react";
+import { IconBrandInstagram, IconBrandLinkedin, IconBrandX } from "@tabler/icons-react";
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
   <Title mx="auto" mt="80px" align="center">Stay Up To Date With Joseph</Title>
   <Text align="center">Follow Joseph on social media to get the latest information on this great movement</Text>
   <Container mb="-30px">
-  <SimpleGrid cols={2} mt="lg">
+  <SimpleGrid cols={3} mt="lg">
     <Flex direction="column">
       <IconBrandInstagram onClick={() => window.open("http://instagram.com/josephmaldjian/")} style={{marginRight: "auto", marginLeft: "auto", cursor: "pointer"}} size="100px" />
       <Text align="center">Instagram</Text>
@@ -41,6 +41,10 @@ export default function Home() {
       <Flex direction="column">
       <IconBrandX style={{marginRight: "auto", marginLeft: "auto"}} size="100px" />
       <Text align="center">X {"(Coming Soon)"}</Text>
+      </Flex>      
+      <Flex direction="column">
+      <IconBrandLinkedin onClick={() => window.open("https://www.linkedin.com/in/joseph-maldjian-b92b4328b/")} style={{marginRight: "auto", marginLeft: "auto", cursor: "pointer"}} size="100px" />
+      <Text align="center">Linkedin</Text>
       </Flex>      
 
   </SimpleGrid>
