@@ -15,7 +15,7 @@ export default function Home() {
     <Flex direction='row'>
     <SimpleGrid cols={2} mt="lg">
       <Text>For too long, politicians in our student government have focused on the issues that impact the few, while the average Comet has been ignored. That all changes starting with this great movement. This movement represents a shift to implementing policies that improve the quality of Comets everyday life. Every decision made on residential life, on transportation, on academics, and on social affairs will be made to benefit this great student body. We do not seek to take away from the few, but rather to make every Comet's voice have a place in our student government. Working together, we will implement real policies that enhance your everyday life.</Text>
-      <Image mx="auto" radius="md" src="./utdSky.jpg" alt="UT Dallas Sky View" />
+      <Image mx="auto" radius="md" src="./utdSky.JPG" alt="UT Dallas Sky View" />
       </SimpleGrid>
     </Flex>
     </Container>
