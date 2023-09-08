@@ -1,6 +1,7 @@
 import { createStyles, Header, Menu, Group, Center, Burger, Container, rem, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
+import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -59,16 +60,15 @@ export default function Navigation({ links }: HeaderSearchProps) {
       return (
         <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
           <Menu.Target>
-            <a
+            <Link
               href={link.link}
               className={classes.link}
-              onClick={(event) => event.preventDefault()}
             >
               <Center>
                 <span className={classes.linkLabel}>{link.label}</span>
                 <IconChevronDown size="0.9rem" stroke={1.5} />
               </Center>
-            </a>
+            </Link>
           </Menu.Target>
           <Menu.Dropdown>{menuItems}</Menu.Dropdown>
         </Menu>
@@ -76,14 +76,13 @@ export default function Navigation({ links }: HeaderSearchProps) {
     }
 
     return (
-      <a
+      <Link
         key={link.label}
         href={link.link}
         className={classes.link}
-        onClick={(event) => event.preventDefault()}
       >
         {link.label}
-      </a>
+      </Link>
     );
   });
 
