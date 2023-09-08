@@ -104,6 +104,7 @@ export default function HeroImageRight() {
               size="xl"
               className={classes.control}
               mt={40}
+              onClick={() => window.open("/VoteReminder.ics")}
             >
               Remind me to vote
             </Button>
