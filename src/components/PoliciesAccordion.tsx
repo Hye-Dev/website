@@ -25,12 +25,6 @@ const charactersList = [
     content: "Many students go to places like Starbucks to study in a casual environment, but then are suprised to find that there are not any power outlets available for them to charge their devices, often cutting their study session short. I will work to bring more power outlets to campus, so that students can study for as long as they need to."
   },
   {
-    id: 'reps',
-    label: "Representatives, Not Politicians",
-    description: 'We need people who are here to serve the students, not themselves',
-    content: 'We need charismatic and ethical leaders who truly represent the people. Leaders who are not all talk and no action. We need leaders who promote policies that improve the lives of every comet.',
-  },
-  {
     id: 'gifts',
     label: "A Better Welcome",
     description: `Let's face it: the welcome gifts are a joke`,
